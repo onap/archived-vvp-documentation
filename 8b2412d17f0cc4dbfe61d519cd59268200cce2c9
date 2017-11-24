@@ -1,0 +1,119 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5a93c517_86045016",
+        "filename": "docs/vnf-validation-labs/conf.py",
+        "patchSetId": 2
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 19
+      },
+      "writtenOn": "2017-11-24T18:59:57Z",
+      "side": 1,
+      "message": "conf.py not needed at this level",
+      "range": {
+        "startLine": 1,
+        "startChar": 0,
+        "endLine": 1,
+        "endChar": 1
+      },
+      "revId": "8b2412d17f0cc4dbfe61d519cd59268200cce2c9",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5a93c517_66ffc402",
+        "filename": "docs/vnf-validation-labs/docs/index.rst",
+        "patchSetId": 2
+      },
+      "lineNbr": 14,
+      "author": {
+        "id": 19
+      },
+      "writtenOn": "2017-11-24T18:59:57Z",
+      "side": 1,
+      "message": "If you have integrated vvp/documentation with the doc project (instructions here http://docs.onap.org/en/amsterdam/guides/onap-developer/how-to-use-docs/include-documentation.html#setup-project-repositories-s) you can just reference this file within vvp/documentation/docs/index.rst, and you do not need any of the conf.py or requirements.txt files at lower levels.\n\nAny patch set with files matching ANT pattern docs/**/*.rst will trigger a doc-{stream}-verify-rtd.   A merge of a patch set with files matching the pattern will trigger an update at read the docs.  Both verify and merge/publish at RTD create a file structure that includes all integrated project/repositories as git submodules and run sphinx_build on the doc project master index.",
+      "range": {
+        "startLine": 1,
+        "startChar": 0,
+        "endLine": 14,
+        "endChar": 12
+      },
+      "revId": "8b2412d17f0cc4dbfe61d519cd59268200cce2c9",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5a93c517_2609bc2c",
+        "filename": "docs/vnf-validation-labs/etc/requirements.txt",
+        "patchSetId": 2
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 19
+      },
+      "writtenOn": "2017-11-24T18:59:57Z",
+      "side": 1,
+      "message": "requirements.txt not needed at this level",
+      "range": {
+        "startLine": 1,
+        "startChar": 0,
+        "endLine": 8,
+        "endChar": 30
+      },
+      "revId": "8b2412d17f0cc4dbfe61d519cd59268200cce2c9",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5a93c517_460e4836",
+        "filename": "docs/vvp-program-governance/conf.py",
+        "patchSetId": 2
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 19
+      },
+      "writtenOn": "2017-11-24T18:59:57Z",
+      "side": 1,
+      "message": "conf.py not needed at this level",
+      "range": {
+        "startLine": 1,
+        "startChar": 0,
+        "endLine": 1,
+        "endChar": 1
+      },
+      "revId": "8b2412d17f0cc4dbfe61d519cd59268200cce2c9",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5a93c517_e612f457",
+        "filename": "docs/vvp-program-governance/etc/requirements.txt",
+        "patchSetId": 2
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 19
+      },
+      "writtenOn": "2017-11-24T18:59:57Z",
+      "side": 1,
+      "message": "requirements.txt not needed at this level",
+      "range": {
+        "startLine": 1,
+        "startChar": 0,
+        "endLine": 8,
+        "endChar": 30
+      },
+      "revId": "8b2412d17f0cc4dbfe61d519cd59268200cce2c9",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    }
+  ]
+}
