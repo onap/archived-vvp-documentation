@@ -12,7 +12,7 @@ Release Notes
    The VVP project was created to provide validation scripts for
    VNFs to test validity against the ONAP Requirements.
 
-Version: 1.0.0
+Version: 2.0.0
 ---------------
 
 
@@ -41,7 +41,7 @@ Version: 1.0.0
 
     - Only deployable using OOM, will be a standalone toolkit in the future.
 
-    - EWSGI webserver dependencies.
+    - UWSGI webserver dependencies.
 
 **Security Issues**
 
