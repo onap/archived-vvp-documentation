@@ -16,46 +16,37 @@ Version: 2.0.0
 ---------------
 
 
-:Release Date: 2018-05-24
-
-
+:Release Date: 2018-06-07
 
 **New Features**
-
-    - Initial release of VNF Validation Program (VVP) for Open Network Automation Platform (ONAP)
-
-    - This intitial releases is based on seed documents that came from Open-O
-      and Open ECOMP.
-
-        This release provides a process to allow VNFs to be incubated
-        and validated against the ONAP Heat Requirements.
+- Initial release of VNF Validation Program (VVP) for Open Network Automation Platform (ONAP).
+- This intitial releases is based on seed documents that came from Open-O and Open ECOMP.
+- This release provides a process to allow VNFs to be incubated and validated against the ONAP Heat Requirements.
 
 **Bug Fixes**
-
     - None
 
 **Known Issues**
+- As of now, the VVP Project has been created to check Validity for VNFs using Heat Orchestration Templates.
+- Only deployable using OOM, will be a standalone toolkit in the future.
+- UWSGI webserver dependencies.
 
-    - As of now, the VVP Project has been created to check Validity for
-      VNFs using Heat Orchestration Templates.
+**Security Notes**
 
-    - Only deployable using OOM, will be a standalone toolkit in the future.
+VVP code has been formally scanned during build time using NexusIQ and no Critical vulnerability was found.
 
-    - UWSGI webserver dependencies.
-
-**Security Issues**
-
-    - No known security issues.
+Quick Links:
+- `VVP project page <https://wiki.onap.org/display/DW/VNF+Validation+Program+Project>`_
+- `Passing Badge information for VVP <https://bestpractices.coreinfrastructure.org/en/projects/1738>`_
 
 **Upgrade Notes**
-
-    - Initial release - none
+- Initial release - none
 
 **Deprecation Notes**
-
-    - Initial release - none
+- Initial release - none
 
 **Other**
+	NA
 
 ===========
 
