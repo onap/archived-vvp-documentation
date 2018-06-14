@@ -15,10 +15,7 @@ It's render and deploy the rockets with kuberenetes management (via quay.io).
 We store files on Ceph distributed storage system that includes 'RADOS Gateway'
 which allows us to store files in AWS S3 based API (buckets etc..).
 
-.. |image0| image:: architecture.png
-   :width: 7in
-   :height: 9in
-
+|image0|
 
 Architecture Alignment
 ----------------------------
@@ -74,3 +71,7 @@ Repo name:
     * org.onap.vvp/validation-scripts
     * org.onap.vvp/documentation
     * org.onap.vvp/image-scanner
+
+.. |image0| image:: architecture.png
+   :width: 11in
+   :height: 5in
