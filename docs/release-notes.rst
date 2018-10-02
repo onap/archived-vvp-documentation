@@ -15,6 +15,13 @@ Release Notes
 Version: 2.0.0
 ---------------
 
+:Release Date: 2018-10-02
+
+**New Features**
+
+- Created mapping of validation scripts to VNF Guidelines
+- Increase validation script test coverage
+- Created HTML report generation in validation scripts repository
 
 :Release Date: 2018-06-07
 
