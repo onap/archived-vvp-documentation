@@ -14,6 +14,7 @@ ONAP for use by the VNF provider & any other validation authority.
 .. toctree::
    :maxdepth: 1
 
+   validation-scripts.rst
    administration.rst
    architecture.rst
    configuration.rst
