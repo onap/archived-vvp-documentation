@@ -15,7 +15,7 @@ Release Notes
 Version: 2.0.0
 ---------------
 
-:Release Date: 2018-10-02
+:Release Date: 2018-11-30
 
 **New Features**
 
