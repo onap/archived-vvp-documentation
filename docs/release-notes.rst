@@ -12,16 +12,28 @@ Release Notes
    The VVP project was created to provide validation scripts for
    VNFs to test validity against the ONAP Requirements.
 
-Version: 2.0.0
----------------
+Version: 3.0.0
+--------------
 
-:Release Date: 2018-10-02
+:Release Date: 2018-11-30
 
 **New Features**
 
 - Created mapping of validation scripts to VNF Guidelines
 - Increase validation script test coverage
 - Created HTML report generation in validation scripts repository
+
+**Security Notes**
+
+VVP code has been formally scanned during build time using NexusIQ and no Critical vulnerability was found.
+
+Quick Links:
+
+- `VVP project page <https://wiki.onap.org/display/DW/VNF+Validation+Program+Project>`_
+- `Passing Badge information for VVP <https://bestpractices.coreinfrastructure.org/en/projects/1738>`_
+
+Version: 2.0.0
+--------------
 
 :Release Date: 2018-06-07
 
