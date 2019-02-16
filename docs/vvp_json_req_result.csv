@@ -1,0 +1,17 @@
+Field Name,Required/Optional/Conditional,Data Type,Valid Values,Description
+``id``,Required,``string``,,"Requirement ID from the VNFRQTS project.
+
+**NOTE**:a requirement ID of ""Unmapped"" may be included if one or more tests are not mapped to a requirement."
+``text``,Required,``string``,,Full text of the requirement.
+``keyword``,Required,``string``,"``MUST``,
+``MUST NOT``,
+``MAY``,
+``""SHOULD""``,
+``""SHOULD NOT""``",RFC 2119 keyword associated with the requirement
+``result``,Required,``string``,"``PASS``, ``SKIP``, ``FAIL``, ``ERROR``","One of the valid values:
+
+* ``PASS`` - The test case passed with no violations
+* ``SKIP`` - The test case was skipped because it was deemed not applicable
+* ``FAIL`` - The test case completed, but it found a violation
+* ``ERROR`` - An unexpected error was found while setting up the test case"
+``errors``,Required,List of ``string``,,Error messages associated with this requirement.  This will be an empty string if the result is ``PASS`` or ``SKIP``

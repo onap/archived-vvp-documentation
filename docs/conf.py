@@ -51,7 +51,6 @@ extensions = [
     'sphinx.ext.doctest',
     'sphinx.ext.graphviz',
     'sphinx.ext.todo',
-    'sphinx.ext.pngmath',
     'sphinx.ext.viewcode',
 ]
 
