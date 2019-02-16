@@ -1,16 +1,47 @@
 .. This work is licensed under a Creative Commons Attribution 4.0 International License.
 .. http://creativecommons.org/licenses/by/4.0
-.. Copyright 2017 AT&T Intellectual Property.  All rights reserved.
+.. Copyright 2019 AT&T Intellectual Property.  All rights reserved.
 
 
 Release Notes
 ===============================
 
-.. note::
-   VNF Onboarding is a challenge across the industry because of a lack of a
-   standard form for VNFs.
-   The VVP project was created to provide validation scripts for
-   VNFs to test validity against the ONAP Requirements.
+
+Version: 4.0.0 (Dublin)
+-----------------------
+
+:Release Date: TBD
+
+**Removed Features**
+
+- The VVP web application has been deprecated and is no longer supported
+  as of the Dublin release.  The validation scripts continue to be supported
+  and enhanced, but contributions to the web-related repositories are now locked
+  and VVP will no longer be supported for deployment via ONAP Operations
+  Manager (OOM).
+
+  The following repositories are now locked as of this release:
+
+    - ``vvp/ansibile-ice-bootstrap``
+    - ``vvp/cms``
+    - ``vvp/devkit``
+    - ``vvp/engagementmgr``
+    - ``vvp/gitlab``
+    - ``vvp/image-scanner``
+    - ``vvp/jenkins``
+    - ``vvp/portal``
+    - ``vvp/postgresql``
+    - ``vvp/test-engine``
+
+**New Features**
+
+- A new :doc:`GUI application <humaninterfaces>` has been contributed and can
+  be used to execute validations in a user-friendly way without using complex
+  command line options.
+- VVP is now packaged as a Docker container eliminating the need to run the
+  application from source code.  See the :ref:`Docker Execution <vvp-docker-execution>`
+  instructions for more details.
+
 
 Version: 3.0.0
 --------------
@@ -70,6 +101,7 @@ Quick Links:
 - Initial release - none
 
 **Other**
+
 	NA
 
 ===========

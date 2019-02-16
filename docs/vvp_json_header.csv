@@ -1,0 +1,17 @@
+Field Name,"Required/
+Optional/
+Conditional",Data Type,Valid Values,Description
+``checksum``,Required,``string``,,MD5 hash of all file contents in the ``template_directory``
+``outcome``,Required,``string``,"``PASS``
+``FAIL``
+``ERROR``","One of the valid values:
+
+* ``PASS`` - All tests passed successfully (some may have been skipped as not applicable based on the contents of the template)
+* ``FAIL`` - At least one test failed.  In this scenario the templates will need to be corrected to comply with the requirements
+* ``ERROR`` - An unexpected error occurred during test setup.  Some or all tests may have not executed.  Issue should be referred to the VVP team for investigation."
+``categories``,Optional,array of ``string``,,Categories selected via the ``--category`` option.
+``template_directory``,Required,``string``,,Absolute path of the directory containing the Heat templates that were validated
+``version``,Required,``string``,,Version of the validation scripts that produced the report
+``timestamp``,Required,``string``,,ISO 8601 Timestamp in UTC of when the report was generated
+``tests``,Required,List of :ref:`Test Result <vvp-test-result>`,,See :ref:`Test Result <vvp-test-result>`
+``requirements``,Required,List of :ref:`Requirement Result <vvp-req-result>`,,See :ref:`Requirement Result <vvp-req-result>`

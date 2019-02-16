@@ -1,0 +1,17 @@
+Field Name,Required/Optional/Conditional,Data Type,Valid Values,Description
+``files``,Required,list of ``string``,,"List of files that were passed to the test case.
+
+**NOTE**: If ``result`` is ``ERROR`` this may be an empty list"
+``test_module``,Required,``string``,,Name of module/file anme that contains the test case
+``test_case``,Required,``string``,,Name of the test case
+``result``,Required,``string``,"* ``PASS``
+* ``SKIP``
+* ``FAIL``
+* ``ERROR``","One of the valid values:
+
+* ``PASS`` - The test case passed with no violations
+* ``SKIP`` - The test case was deemed not applicable
+* ``FAIL`` - The test case completed, but a violation was found
+* ``ERROR`` - An unexpected error was found while setting up the test case"
+``error``,Required,``string``,,"If the test failed or encountered an error, then ths will be a message summarizing the error.  If the test passed or was skipped, then this will be an empty string"
+``requirements``,Required,List of :ref:`Requirement Metadata <vvp-req-metadata>`,,See :ref:`Requirement Metadata <vvp-req-metadata>`
