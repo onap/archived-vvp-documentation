@@ -3,7 +3,7 @@
 .. Copyright 2019 AT&T Intellectual Property.  All rights reserved.
 
 
-Release Notes
+VVP Project Release Notes
 ===============================
 
 
