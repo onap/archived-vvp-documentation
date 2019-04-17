@@ -28,5 +28,6 @@ setup, and execute the validations.
 
    installation.rst
    validation-scripts.rst
+   contributing.rst
    humaninterfaces.rst
    release-notes.rst
