@@ -7,10 +7,10 @@ VVP Project Release Notes
 ===============================
 
 
-Version: 4.0.0 (Dublin)
------------------------
+Version: 4.0.0
+--------------
 
-:Release Date: TBD
+:Release Date: 2019-05-10
 
 **Removed Features**
 
@@ -41,6 +41,20 @@ Version: 4.0.0 (Dublin)
 - VVP is now packaged as a Docker container eliminating the need to run the
   application from source code.  See the :ref:`Docker Execution <vvp-docker-execution>`
   instructions for more details.
+- VVP Validation Scripts now cover all mandatory, testable HOT requirements from VNFRQTS
+
+**Known Issues**
+
+- None
+
+**Security Notes**
+
+VVP code has been formally scanned during build time using NexusIQ and no Critical vulnerability was found.
+
+Quick Links:
+
+- `VVP project page <https://wiki.onap.org/display/DW/VNF+Validation+Program+Project>`_
+- `Passing Badge information for VVP <https://bestpractices.coreinfrastructure.org/en/projects/1738>`_
 
 
 Version: 3.0.0
