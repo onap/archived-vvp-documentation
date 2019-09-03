@@ -7,6 +7,80 @@ VVP Project Release Notes
 ===============================
 
 
+Version: 5.1.0
+--------------
+
+:Release Date: TBD
+
+**Removed Features**
+- None
+
+**New Features**
+
+- OpenStack Heat Validation - VVP now includes the latest version of OpenStack
+  Heat, and can be used to validate that the Heat not only complies with ONAP
+  rules, but is also valid Heat (similar to stack-validate) (``VVP-218``)
+- Preload Template Generation - VVP will not create preload templates based
+  on the Heat template being validated. The user can optionally populate the
+  template by specifying environment files (``VVP-227``, ``VVP-277``)
+- Added ``checks.py`` to consolidate various quality checks that can now
+  be performed cross-platform and consistently between the local and build
+  environment.
+
+    - Added quality check to ensure VVP includes the latest version of Heat
+      requirements from the VVP project
+    - All code is now scanned for security issues using the Bandit library
+      (``VVP-244``)
+
+- Updated Availability Zone tests to align with latest VNF Requirements
+  (``VVP-226``)
+- Performance enhancements - improved performance of validation of large
+  templates by 30-70% (``VVP-225``)
+- VVP GUI can be customized to display configurable disclaimer text, and
+  also allow the acceptance of terms-and-condition, or other legal agreements
+  before allowing the user to use the tool (``VVP-195``)
+- Enhanced report readability by removing unnecessary columns and other
+  enhancements (``VVP-184``)
+- Removed dependency on ``yamllint`` library to remove dependency on L/GPL code
+  (``VVP-201``)
+- Allow error messages with line breaks (``VVP-225``)
+- Various enhancements to remove redundant tests or improve error messages
+
+
+
+**Bug Fixes**
+- Fixed errors in ``test_environment_file_parameters`` where wrong variables
+  were being checked (``VVP-267``)
+- VVP GUI fails to open reports when tools is launched from a network share
+  (``VVP-266``)
+- Escape error messages before display in HTML report (``VVP-159``)
+- Improved error message when Heat archives included nested directories which
+  are not allowed (``VVP-217``)
+- Relaxed validation of ``get_param`` usage to better comply with SDC
+  implementation (``VVP-220``)
+
+
+**Known Issues**
+
+- None
+
+**Security Notes**
+
+VVP code has been formally scanned during build time using NexusIQ and no
+Critical vulnerability was found.
+
+Additionally, all VVP code is now scanned using the `Bandit <https://bandit.readthedocs.io/en/latest/>`__
+library.  All potential issues reported this scanning process have been
+addressed or marked as non-issues using the ``# nosec`` marker in the source
+code.
+
+Quick Links:
+
+- `VVP project page <https://wiki.onap.org/display/DW/VNF+Validation+Program+Project>`_
+- `Passing Badge information for VVP <https://bestpractices.coreinfrastructure.org/en/projects/1738>`_
+
+
+
 Version: 4.0.0
 --------------
 
