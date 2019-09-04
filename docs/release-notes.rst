@@ -49,6 +49,7 @@ Version: 5.1.0
 
 
 **Bug Fixes**
+
 - Fixed errors in ``test_environment_file_parameters`` where wrong variables
   were being checked (``VVP-267``)
 - VVP GUI fails to open reports when tools is launched from a network share

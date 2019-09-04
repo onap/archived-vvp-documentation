@@ -29,5 +29,6 @@ setup, and execute the validations.
    installation.rst
    validation-scripts.rst
    humaninterfaces.rst
+   preload-generation.rst
    contributing.rst
    release-notes.rst

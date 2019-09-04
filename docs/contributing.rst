@@ -6,7 +6,7 @@ How to Contribute
 #################
 
 Overview
-~~~~~~~~
+--------
 
 This section will provide details on how to contribute changes to the project
 covering both the mechanics of how to contribute new code as well as
@@ -14,7 +14,7 @@ how to adhere to the code quality and coding practices of the project.
 
 
 Prerequisites
-~~~~~~~~~~~~~
+-------------
 
 As this project is part of the overall ONAP project, there are some common
 guidelines and activities you will need to adhere to:
@@ -41,7 +41,7 @@ Other useful links:
   for scheduling details
 
 Objective
-~~~~~~~~~
+---------
 
 The primary focus of VVP is ensuring that a VNF that is described using Openstack
 Heat complies with the ONAP Heat requirements specified in the `VNF Requirements (VNFRQTS) <https://onap.readthedocs.io/en/latest/submodules/vnfrqts/requirements.git/docs/index.html>`__
@@ -63,7 +63,7 @@ requirement, then please consider making a contribution to that project first.
 
 
 Writing Tests
-#############
+-------------
 
 Coding Conventions
 ~~~~~~~~~~~~~~~~~~
@@ -305,7 +305,7 @@ The tests should be compatible with ``pytest``, but these tests
 do not use the fixtures mechanism.
 
 Submitting Your Changes For Review
-##################################
+----------------------------------
 
 Once you have completed your changes and tested they work as expected, then the
 next step is to validate they are ready for submission.  The ``checks.py``

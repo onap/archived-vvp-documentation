@@ -65,6 +65,18 @@ that are used by VVP::
       --output-directory=OUTPUT_DIR
                             Alternate directory for report output.
 
+      --category=TEST_CATEGORIES
+                            optional category of test to execute
+
+      --env-directory=ENV_DIR
+                            optional directory of .env files for preload
+                            generation
+
+      --preload-format=PRELOAD_FORMATS
+                            Preload format to create (multiple allowed). If not
+                            provided then all available formats will be created:
+                            GR-API, VNF-API
+
 .. _vvp-reports:
 
 VVP Reports
@@ -99,6 +111,13 @@ ouput directory (specified via ``--output-directory`` or
 | ``failures``          | **Deprecated** JSON version of test failures.  Use   |
 |                       | ``report.json`` instead.                             |
 +-----------------------+------------------------------------------------------+
+|``preloads/<format>/*``| A blank preload will be created for every VF Module  |
+|                       | in the template directory.  The ``<format>``         |
+|                       | will be based on the preload format(s) selected.     |
+|                       | See :ref:`Preload Generation <vvp-preload-gen>` for  |
+|                       | for more detail.                                     |
++-----------------------+------------------------------------------------------+
+
 
 .. _vvp-report:
 
@@ -341,22 +360,3 @@ written on your local machine::
 
 The same :ref:`command line options <vvp-cmd-options>` can be used with the
 Docker image that are used with the version from source.
-
-Self-Test Suite
----------------
-
-The ``ice_validator`` includes an extensive self-test suite. It is a
-**requirement** for any additions or changes to the test suite to
-successfully and cleanly complete a tox run. Simply run ``tox`` from
-the project root as:
-
-``$ tox``
-
-You can also run it under the folder ``ice_validator``:
-
-``$ pytest --self-test``
-
-
-
-
-
