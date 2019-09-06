@@ -52,3 +52,9 @@ or its `GitHub mirror <https://github.com/onap/vvp-validation-scripts>`__.
 3. Install the required dependencies with the following command::
 
     > python pip install -r requirements.txt
+
+4. If you plan to make code changes, then initialize the standard git
+   commit hooks by initializing pre-commit::
+
+    > pre-commit install
+

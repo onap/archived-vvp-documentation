@@ -71,6 +71,10 @@ Coding Conventions
 * Follow `PEP-8 conventions <https://www.python.org/dev/peps/pep-0008/>`__
     * NOTE: The only variation is that the line-length can be 88
       characters vs. 80
+* All code must be formatted using the `Black <https://black.readthedocs.io/>`__
+  code formatter.  VVP uses the `pre-commit library <https://pre-commit.com/>`__
+  to automatically format code at check-in.  After running ``pip install``,
+  run ``pre-commit install`` to initialize the git hook.
 * Familiarize yourself with the utilities that exist in the following utility
   modules and leverage them to avoid duplication.
 
