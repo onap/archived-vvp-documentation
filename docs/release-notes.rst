@@ -7,10 +7,10 @@ VVP Project Release Notes
 ===============================
 
 
-Version: 5.1.0
+Version: 5.0.1
 --------------
 
-:Release Date: TBD
+:Release Date: 2019-09-30
 
 **Removed Features**
 - None
