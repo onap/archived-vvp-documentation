@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "c1ae7285_c4fbc3c1",
+        "filename": "docs/release-notes.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 3999
+      },
+      "writtenOn": "2020-03-26T23:12:10Z",
+      "side": 1,
+      "message": "In the past we\u0027ve used the release of the ONAP release.  I\u0027m ok either way.  The Frankfurt sign-off date is 5/14/20 if you do want to use that.",
+      "revId": "fffd30cc53516eb97b06f2b74f80690d7647f6a2",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    }
+  ]
+}
