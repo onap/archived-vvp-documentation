@@ -7,6 +7,70 @@ VVP Project Release Notes
 ===============================
 
 
+Version: 6.0.0
+--------------
+
+:Release Date: 2020-05-14
+
+**Removed Features**
+- None
+
+**New Features**
+
+- Added plugin capability to preload template generation. End users can
+  now create their own python plugins for VVP to generate preload templates
+  in the method and format of their choosing. (``VVP-339``)
+- The ``vvp/test-engine`` repository has been revived and repurposed, and
+  is now used to maintain the code for the following two enhancements:
+
+    - Enhanced OVP VNF Heat validation to execute stand-alone, and moved into
+      the VVP test-engine repository. (``VVP-381``)
+    - Created onap-client python api client to interact with various ONAP
+      applications. (``VVP-381``)
+
+- Added validation test for new VNF Heat Template requirement R-55307
+  . (``VVP-354``)
+- Enhanced validation for nested resources R-17528. (``VVP-357``)
+- Updated test_02_no_duplicate_keys_in_file to check environment files
+  for duplicate keys. (``VVP-284``)
+- Enhanced validation for R-90279 based on updated VNF Heat Template
+  requirements. (``VVP-360``)
+- Enhanced resiliency of preload template generation to support more
+  general case VNF Heat Templates. (``VVP-335``)
+
+**Bug Fixes**
+
+- Resolved false negatives for internal network floating IP parameters
+  parameter format checks. (``VVP-340``)
+- Resolved false negatives checking required sections of a VNF Base
+  Template module. (``VVP-365``)
+
+
+**Known Issues**
+
+- None
+
+**Security Notes**
+
+VVP code has been formally scanned during build time using NexusIQ and no
+Critical vulnerability was found.
+
+VVP code also is passing the mandatory test coverage percentage (%55).
+
+- `Validation Scripts <https://sonarcloud.io/dashboard?id=onap_vvp-validation-scripts>`__
+- `Test Engine <https://sonarcloud.io/dashboard?id=onap_vvp-test-engine>`__
+
+Additionally, all VVP code is still scanned using the `Bandit <https://bandit.readthedocs.io/en/latest/>`__
+library.  All potential issues reported this scanning process have been
+addressed or marked as non-issues using the ``# nosec`` marker in the source
+code.
+
+Quick Links:
+
+- `VVP project page <https://wiki.onap.org/display/DW/VNF+Validation+Program+Project>`_
+- `Passing Badge information for VVP <https://bestpractices.coreinfrastructure.org/en/projects/1738>`_
+
+
 Version: 5.0.1
 --------------
 
@@ -20,7 +84,7 @@ Version: 5.0.1
 - OpenStack Heat Validation - VVP now includes the latest version of OpenStack
   Heat, and can be used to validate that the Heat not only complies with ONAP
   rules, but is also valid Heat (similar to stack-validate) (``VVP-218``)
-- Preload Template Generation - VVP will not create preload templates based
+- Preload Template Generation - VVP will now create preload templates based
   on the Heat template being validated. The user can optionally populate the
   template by specifying environment files (``VVP-227``, ``VVP-277``)
 - Added ``checks.py`` to consolidate various quality checks that can now
