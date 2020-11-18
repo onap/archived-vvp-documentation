@@ -8,6 +8,54 @@ VVP Project Release Notes
 ===============================
 
 
+Version: 7.0.0
+--------------
+
+:Release Date: 2020-11-18
+
+**Removed Features**
+- None
+
+**New Features**
+
+- Added additional test for resource group parameters. (``VVP-438``)
+- Updated validation for R-610030: An incremental module must have
+  a server or volume. (``VVP-451``)
+- Various enhancements for performance and stability of
+  onap-client. (``VVP-487``)
+
+**Bug Fixes**
+
+- Fixed the error message returned for test_get_attr_usage.py. (``VVP-420``)
+- Fixed false posive testing port resource ids. (``VVP-346``)
+- Various fixes for preload generation. (``VVP-440``)
+
+
+**Known Issues**
+
+- None
+
+**Security Notes**
+
+VVP code has been formally scanned during build time using NexusIQ and no
+Critical vulnerability was found.
+
+VVP code also is passing the mandatory test coverage percentage (%55).
+
+- `Validation Scripts <https://sonarcloud.io/dashboard?id=onap_vvp-validation-scripts>`__
+- `Test Engine <https://sonarcloud.io/dashboard?id=onap_vvp-test-engine>`__
+
+Additionally, all VVP code is still scanned using the `Bandit <https://bandit.readthedocs.io/en/latest/>`__
+library.  All potential issues reported this scanning process have been
+addressed or marked as non-issues using the ``# nosec`` marker in the source
+code.
+
+Quick Links:
+
+- `VVP project page <https://wiki.onap.org/display/DW/VNF+Validation+Program+Project>`_
+- `Passing Badge information for VVP <https://bestpractices.coreinfrastructure.org/en/projects/1738>`_
+
+
 Version: 6.0.0
 --------------
 
