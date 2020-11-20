@@ -21,7 +21,7 @@ Version: 7.0.0
 - Added additional test for resource group parameters. (``VVP-438``)
 - Updated validation for R-610030: An incremental module must have
   a server or volume. (``VVP-451``)
-- Various enhancements for performance and stability of
+- Various enhancements for the performance and stability of
   onap-client. (``VVP-487``)
 
 **Bug Fixes**
