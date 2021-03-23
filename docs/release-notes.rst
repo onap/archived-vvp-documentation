@@ -8,6 +8,48 @@ VVP Project Release Notes
 ===============================
 
 
+Version: 9.0.0
+--------------
+
+:Release Date: 2020-03-23
+
+**Removed Features**
+- None
+
+**New Features**
+
+- Performance improvements for test-engine. This reduces runtime for 
+  OVP VNF Life-Cycle validation tests. (``VVP-503`` ``VVP-504``)
+
+**Bug Fixes**
+
+- None
+
+**Known Issues**
+
+- None
+
+**Security Notes**
+
+VVP code has been formally scanned during build time using NexusIQ and no
+Critical vulnerability was found.
+
+VVP code also is passing the mandatory test coverage percentage (%55).
+
+- `Validation Scripts <https://sonarcloud.io/dashboard?id=onap_vvp-validation-scripts>`__
+- `Test Engine <https://sonarcloud.io/dashboard?id=onap_vvp-test-engine>`__
+
+Additionally, all VVP code is still scanned using the `Bandit <https://bandit.readthedocs.io/en/latest/>`__
+library.  All potential issues reported this scanning process have been
+addressed or marked as non-issues using the ``# nosec`` marker in the source
+code.
+
+Quick Links:
+
+- `VVP project page <https://wiki.onap.org/display/DW/VNF+Validation+Program+Project>`_
+- `Passing Badge information for VVP <https://bestpractices.coreinfrastructure.org/en/projects/1738>`_
+
+
 Version: 7.0.0
 --------------
 
