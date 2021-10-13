@@ -8,10 +8,53 @@ VVP Project Release Notes
 ===============================
 
 
+Version: 9.0.0
+--------------
+
+:Release Date: 2021-10-13
+
+**Removed Features**
+- None
+
+**New Features**
+
+- Increase timeout value for requests. (``VVP-555``)
+- Support for modeling service < 1.0. (``VVP-556``)
+- Support for first time VSP users. (``VVP-535``)
+
+**Bug Fixes**
+
+- None
+
+**Known Issues**
+
+- None
+
+**Security Notes**
+
+VVP code has been formally scanned during build time using NexusIQ and no
+Critical vulnerability was found.
+
+VVP code also is passing the mandatory test coverage percentage (%55).
+
+- `Validation Scripts <https://sonarcloud.io/dashboard?id=onap_vvp-validation-scripts>`__
+- `Test Engine <https://sonarcloud.io/dashboard?id=onap_vvp-test-engine>`__
+
+Additionally, all VVP code is still scanned using the `Bandit <https://bandit.readthedocs.io/en/latest/>`__
+library.  All potential issues reported this scanning process have been
+addressed or marked as non-issues using the ``# nosec`` marker in the source
+code.
+
+Quick Links:
+
+- `VVP project page <https://wiki.onap.org/display/DW/VNF+Validation+Program+Project>`_
+- `Passing Badge information for VVP <https://bestpractices.coreinfrastructure.org/en/projects/1738>`_
+
+
 Version: 8.0.0
 --------------
 
-:Release Date: 2020-03-23
+:Release Date: 2021-03-23
 
 **Removed Features**
 - None
