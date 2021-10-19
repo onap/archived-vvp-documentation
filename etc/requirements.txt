@@ -14,11 +14,4 @@
 # limitations under the License.
 #############################################################################
 
-tox
-Sphinx>=1.7
-doc8
-docutils
-setuptools
-six
-sphinxcontrib-httpdomain
-sphinx_bootstrap_theme>=0.4.11
+lfdocs-conf
